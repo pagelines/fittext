@@ -28,7 +28,7 @@ class FitTextSection extends PageLinesSection {
 	 * Enqueue the javascript file.
 	 */
 	function section_scripts(){				
-		wp_enqueue_script('fittext', $this->base_url . '/jquery.fittext.js', array( 'jquery' ) );
+		wp_enqueue_script('fittext', $this->base_url . '/jquery.fittext.js', array( 'jquery' ), PL_CORE_VERSION, true );
 	}
 
 	/**
